@@ -1,11 +1,9 @@
-package com.qait.tap.seltest.frisbeegolf;
+package com.qait.tap.seltest.golf;
 
 import java.util.Random;
 import org.json.JSONArray;
 
 /**
- * 
- * 
  * 
  * @author Ramandeep RamandeepSingh[AT]QAInfoTech.com
  */
