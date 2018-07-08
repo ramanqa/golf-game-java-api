@@ -45,14 +45,14 @@ public class GolfCourse {
     }
     
     /**
-     * get JSON desrialized representation of current game
-     * This included:
-     *   - Hole field size
-     *   - Ball's current coordinates
-     *   - Hole coordinates
-     *   - Current par score
-     *   - Wind speed/direction details
-     *   - Computed Results
+     * get JSON desrialized representation of current game <br>
+     * This included: <br>
+     *   - Hole field size <br>
+     *   - Ball's current coordinates <br>
+     *   - Hole coordinates <br>
+     *   - Current par score <br>
+     *   - Wind speed/direction details <br>
+     *   - Computed Results <br>
      * @return 
      */
     public JSONObject toJson(){
@@ -146,24 +146,24 @@ public class GolfCourse {
     /**
      * hit gold ball with power and to which direction on field. 
      *   Ball will end on the block on field depending on the direction
-     * supplied, power and wind speed. 
-     * For instance if 
-     *    ball is at [0,0];
-     *    Wind speed is =[2,-2];
-     *    Power = 5;
-     *    Direction = RD;
-     *    Final ball position after the shot will be [0+5+2, 0+5+(-2)] => [7,3]
-     * Wind [x,y]:
-     *   x - positive means wind direction is right - R
-     *   -x - negative means wind direction is left - L
-     *   y - positive means wind direction is downwards - D
-     *   -y - negative means wind direction is upwards - U
+     * supplied, power and wind speed. <br>
+     * For instance if <br>
+     *    ball is at [0,0]; <br>
+     *    Wind speed is =[2,-2]; <br>
+     *    Power = 5; <br>
+     *    Direction = RD; <br>
+     *    Final ball position after the shot will be [0+5+2, 0+5+(-2)] => [7,3] <br>
+     * Wind [x,y]: <br>
+     *   x - positive means wind direction is right - R <br>
+     *   -x - negative means wind direction is left - L <br>
+     *   y - positive means wind direction is downwards - D <br>
+     *   -y - negative means wind direction is upwards - U <br>
      * 
-     * @param power - Strength of your shot. Max power is 10. 
-     *   This is the number of blocks ball will travel when hit before
+     * @param power - Strength of your shot. Max power is 10. <br>
+     *   This is the number of blocks ball will travel when hit before <br>
      *   considering wind resistance.
-     * @param direction - Direction you want to hit the ball.
-     *   You can hit ball in right, left, up and down direction and also diagonally.
+     * @param direction - Direction you want to hit the ball. <br>
+     *   You can hit ball in right, left, up and down direction and also diagonally. <br>
      *   Options: Any one of R, RD, D, LD, L, LU, U, RU
      * @throws com.qait.tap.seltest.golf.GameOverException - When trying to hit the ball and ball is already in hole.
      * @throws com.qait.tap.seltest.golf.PowerExceedsMaxRangeException - Max power is 10
@@ -243,13 +243,13 @@ public class GolfCourse {
     
     /**
      * 
-     * @param difficultyLevel - 0 to 6
-     *  difficultLevel:
-     *   0: golfCourse 11x1, x=0, no wind
-     *   1: golfCourse 11x1, x=0
-     *   2-3: golfCourse 21x21
-     *   4-5: golfCourse 51x51
-     *   >5 or <1: Exception IlleagalGameDIfficultyLevelException
+     * @param difficultyLevel - 0 to 5 <br>
+     *  difficultLevel: <br>
+     *   0: golfCourse 11x1, x=0, no wind <br>
+     *   1: golfCourse 11x1, x=0 <br>
+     *   2-3: golfCourse 21x21 <br>
+     *   4-5: golfCourse 51x51 <br>
+     *   >5 or <1: Exception IllegalGolfCourseDIfficultyLevelException
      * @throws FileNotFoundException
      * @throws UnsupportedEncodingException
      * @throws IllegalGolfCourseDifficultyException 

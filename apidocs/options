@@ -1,0 +1,24 @@
+-classpath
+'/home/ramandeep/.m2/repository/org/json/json/20180130/json-20180130.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/media/sf_WS/dev/TAP/golf-game-java-api/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2018. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/media/sf_WS/dev/TAP/golf-game-java-api/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'golf-game-java-api 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/media/sf_WS/dev/TAP/golf-game-java-api/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'golf-game-java-api 1.0-SNAPSHOT API'
